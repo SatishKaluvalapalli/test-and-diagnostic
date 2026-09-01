@@ -1,0 +1,39 @@
+config/TestAndDiagnostic_arm.XML
+  s_c7616d4e78c7ba::t_e32f8c3dbdec98 412-423,527-538
+source/diagnostic/BbhmDiagDownload/bbhm_download_action.c
+  s_c7616d4e78c7ba::t_e97671cd114f70 83-84,95-98,287,366-373,404-407,410-416,423,466-484,633-642,644-647,661-662,664-666,668,670-749,751,753-755,763-764,773-799,824-828,835,1047-1048,1117-1118
+source/diagnostic/BbhmDiagDownload/bbhm_download_global.h
+  s_c7616d4e78c7ba::t_eba09373a18b5a 126
+source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
+  s_c7616d4e78c7ba::t_9b89a540d54877 83-85,98-108,466-473,504-507,510-516,523,570-588,712,769,772-781,783-786,807-809,811,813-818,820-823,825-828,830-834,836,838-839,841-843,845-855,857,859-899,923-924,926-931,940-966,990-994,1001,1211-1212,1271-1272
+source/diagnostic/BbhmDiagUpload/bbhm_upload_global.h
+  s_c7616d4e78c7ba::t_025a11188415c9 126
+source/diagnostic/include/bbhm_download_interface.h
+  s_c7616d4e78c7ba::t_038d33e9a29e76 99-100,112-113,125
+source/diagnostic/include/bbhm_upload_interface.h
+  s_c7616d4e78c7ba::t_81e31f4798c31c 100-101,113-114,126
+source/dmltad/Makefile.am
+  s_c7616d4e78c7ba::t_1715ad0c8b558a 35-36
+source/dmltad/cosa_apis_ip_priv.c
+  s_c7616d4e78c7ba::t_839132560324db 1-108
+source/dmltad/cosa_apis_ip_priv.h
+  s_c7616d4e78c7ba::t_257fef532be623 1-37
+source/dmltad/cosa_ip_dml.c
+  s_c7616d4e78c7ba::t_f92fc420ccea53 86-87,132-137,3457-3497,4005,4007-4023,4026,4041-4070,4232-4243,4245,4247-4248,4250-4252,4254-4302,4362-4363,4580-4621,5127,5129-5145,5148,5174-5203,5363,5366-5369,5371-5375,5377,5380-5381,5383-5385,5387-5435,5495-5496
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "455967b91e57126be6d920328f65685b9d9dbd28",
+  "prompts": {},
+  "sessions": {
+    "s_c7616d4e78c7ba": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "95f43fb1-f4c8-4275-8abe-0242bb0a837a",
+        "model": "composer-2.5"
+      },
+      "human_author": "kaluvalapalli.satish <kaluvalapalli.satish@telekom-digital.com>"
+    }
+  }
+}
