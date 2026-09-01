@@ -2,10 +2,13 @@ config/TestAndDiagnostic_arm.XML
   s_c7616d4e78c7ba::t_e32f8c3dbdec98 412-423,527-538
 source/diagnostic/BbhmDiagDownload/bbhm_download_action.c
   s_c7616d4e78c7ba::t_e97671cd114f70 83-84,95-98,287,366-373,404-407,410-416,423,466-484,633-642,644-647,661-662,664-666,668,670-749,751,753-755,763-764,773-799,824-828,835,1047-1048,1117-1118
+  s_c7616d4e78c7ba::t_93d31445a3327a 643
 source/diagnostic/BbhmDiagDownload/bbhm_download_global.h
   s_c7616d4e78c7ba::t_eba09373a18b5a 126
 source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
   s_c7616d4e78c7ba::t_9b89a540d54877 83-85,98-108,466-473,504-507,510-516,523,570-588,712,769,772-781,783-786,807-809,811,813-818,820-823,825-828,830-834,836,838-839,841-843,845-855,857,859-899,923-924,926-931,940-966,990-994,1001,1211-1212,1271-1272
+  s_c7616d4e78c7ba::t_0c42f413621a08 782
+  s_c7616d4e78c7ba::t_f10b10634bc043 925
 source/diagnostic/BbhmDiagUpload/bbhm_upload_global.h
   s_c7616d4e78c7ba::t_025a11188415c9 126
 source/diagnostic/include/bbhm_download_interface.h
