@@ -1,0 +1,21 @@
+source/dmltad/cosa_apis_busutil.c
+  s_c7616d4e78c7ba::t_135f6cb4bb47c0 84-86,231,237-277
+source/dmltad/cosa_ip_dml.c
+  s_c7616d4e78c7ba::t_51842bf484c462 3574-3582,4096-4102,4558-4566,5073-5079
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "2e46a6ada7bde77ecf104c217eca29b951c3f187",
+  "prompts": {},
+  "sessions": {
+    "s_c7616d4e78c7ba": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "95f43fb1-f4c8-4275-8abe-0242bb0a837a",
+        "model": "composer-2.5"
+      },
+      "human_author": "kaluvalapalli.satish <kaluvalapalli.satish@telekom-digital.com>"
+    }
+  }
+}
