@@ -1,0 +1,29 @@
+Makefile.am
+  s_c7616d4e78c7ba::t_733c52b3976f52 84
+source/diagnostic/BbhmDiagCommon/bbhm_common_internal_api.c
+  s_c7616d4e78c7ba::t_a68f39087109f9 112-162
+source/diagnostic/BbhmDiagCommon/bbhm_common_internal_api.h
+  s_c7616d4e78c7ba::t_c4c972f93b74f4 48-57
+source/diagnostic/BbhmDiagDownload/bbhm_download_action.c
+  s_c7616d4e78c7ba::t_c93eb0646e63f2 85-88,291-324,455-457,465-469,824-838,842-846,857-860
+source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
+  s_c7616d4e78c7ba::t_8034ac495b96c9 435-441,443-454,456-478,479-506,508-513,515-518,520-521,605-607,615-619,809,866-868,1045-1059,1063-1070,1081-1084
+source/dmltad/cosa_ip_dml.c
+  s_c7616d4e78c7ba::t_1be1df36bb7cdf 4630-4637
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "0c43e8142aa7e8cb9bf40d389f49fcae0303e3d2",
+  "prompts": {},
+  "sessions": {
+    "s_c7616d4e78c7ba": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "95f43fb1-f4c8-4275-8abe-0242bb0a837a",
+        "model": "composer-2.5"
+      },
+      "human_author": "kaluvalapalli.satish <kaluvalapalli.satish@telekom-digital.com>"
+    }
+  }
+}
