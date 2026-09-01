@@ -8,6 +8,7 @@ source/diagnostic/BbhmDiagDownload/bbhm_download_action.c
   s_c7616d4e78c7ba::t_c93eb0646e63f2 85-88,291-324,455-457,465-469,824-838,842-846,857-860
 source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
   s_c7616d4e78c7ba::t_8034ac495b96c9 435-441,443-454,456-478,479-506,508-513,515-518,520-521,605-607,615-619,809,866-868,1045-1059,1063-1070,1081-1084
+  s_c7616d4e78c7ba::t_b1aac1451ecbc4 507,514,519
 source/dmltad/cosa_ip_dml.c
   s_c7616d4e78c7ba::t_1be1df36bb7cdf 4630-4637
 ---
