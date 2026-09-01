@@ -1,0 +1,23 @@
+config/TestAndDiagnostic_arm.XML
+  s_c7616d4e78c7ba::t_1fa8c1954c1158 444,450,523,559,565
+source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
+  s_c7616d4e78c7ba::t_76ded611a944f1 334,353
+source/dmltad/cosa_ip_dml.c
+  s_c7616d4e78c7ba::t_0df8ee45fdbb52 4628,5220-5223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "ea4bd94732b856139f93402ba5acd0f24df970b6",
+  "prompts": {},
+  "sessions": {
+    "s_c7616d4e78c7ba": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "95f43fb1-f4c8-4275-8abe-0242bb0a837a",
+        "model": "composer-2.5"
+      },
+      "human_author": "kaluvalapalli.satish <kaluvalapalli.satish@telekom-digital.com>"
+    }
+  }
+}
