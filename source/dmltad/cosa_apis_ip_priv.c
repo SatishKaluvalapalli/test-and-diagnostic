@@ -4,6 +4,8 @@
 #include "ansc_platform.h"
 #include "cosa_apis_ip_priv.h"
 
+BOOL g_Tr143SpeedTestTestUsable = TRUE;
+
 void getDiagnosticState(uint DiagType, char* DiagState)
 {
     uint state;

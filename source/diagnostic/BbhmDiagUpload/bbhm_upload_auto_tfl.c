@@ -475,7 +475,7 @@ AutoTfl_Finish
  *
  * Flow matches ACS/WebPA setting DiagnosticsState=Requested:
  *   RequestOnWanStarted → set state on DM upload info → UploadDiagnostics_Commit
- *   Commit → IfAddr / TestUsable / CosaDmlDiagScheduleDiagnostic → StartDiag
+ *   Commit → IfAddr / X_RDK_SpeedTest.TestUsable / CosaDmlDiagScheduleDiagnostic → StartDiag
  *   → updateTestFileLength → AutoTfl_Start (train or reuse)
  *
  * ScheduleNext is different: only used between training rounds (Bbhm StartDiag).
@@ -504,7 +504,7 @@ AutoTfl_RequestOnWanStarted(void)
     pUploadInfo->DiagnosticsState = DSLH_TR143_DIAGNOSTIC_Requested;
     CcspTraceInfo(("UploadDiag AutoTfl: wan-status=started → Requested (URL=%s)\n",
             pUploadInfo->UploadURL[0] ? pUploadInfo->UploadURL : "(empty)"));
-    /* Commit: resolve IfAddr, check TestUsable, schedule/start upload. */
+    /* Commit: resolve IfAddr, check X_RDK_SpeedTest.TestUsable, schedule/start upload. */
     UploadDiagnostics_Commit(NULL);
 }
 

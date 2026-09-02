@@ -675,10 +675,22 @@
                     <name>X_RDK_SpeedTest</name>
                     <objectType>object</objectType>
                     <functions>
+                        <func_GetParamBoolValue>RDK_SpeedTest_GetParamBoolValue</func_GetParamBoolValue>
+                        <func_SetParamBoolValue>RDK_SpeedTest_SetParamBoolValue</func_SetParamBoolValue>
                         <func_GetParamUlongValue>RDK_SpeedTest_GetParamUlongValue</func_GetParamUlongValue>
                         <func_SetParamUlongValue>RDK_SpeedTest_SetParamUlongValue</func_SetParamUlongValue>
+                        <func_Validate>RDK_SpeedTest_Validate</func_Validate>
+                        <func_Commit>RDK_SpeedTest_Commit</func_Commit>
+                        <func_Rollback>RDK_SpeedTest_Rollback</func_Rollback>
                      </functions>
                      <parameters>
+                        <parameter>
+                            <name>TestUsable</name>
+                            <type>boolean</type>
+                            <syntax>bool</syntax>
+                            <writable>true</writable>
+                            <notify>on</notify>
+                        </parameter>
                         <parameter>
                             <name>SubscriberUnPauseTimeOut</name>
                             <type>unsignedInt</type>
@@ -1583,26 +1595,6 @@
                                 <type>unsignedInt</type>
                                 <syntax>uint32</syntax>
                                 <writable>false</writable>
-                        </parameter>
-                </parameters>
-        </object>
-        <object>
-                <name>X_T-ONLINE-DE_Speedtest</name>
-                <objectType>object</objectType>
-                <functions>
-                        <func_GetParamBoolValue>WANSpeedtest_GetParamBoolValue</func_GetParamBoolValue>
-                        <func_SetParamBoolValue>WANSpeedtest_SetParamBoolValue</func_SetParamBoolValue>
-                        <func_Validate>WANSpeedtest_Validate</func_Validate>
-                        <func_Commit>WANSpeedtest_Commit</func_Commit>
-                        <func_Rollback>WANSpeedtest_Rollback</func_Rollback>
-                </functions>
-                <parameters>
-                        <parameter>
-                                <name>TestUsable</name>
-                                <type>boolean</type>
-                                <syntax>bool</syntax>
-                                <writable>true</writable>
-                                <notify>on</notify>
                         </parameter>
                 </parameters>
         </object>

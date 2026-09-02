@@ -4285,7 +4285,7 @@ DownloadDiagnostics_Commit
     if (pAddrName)
         AnscFreeMemory(pAddrName);
 
-    if (gbSpeedTest_TestUsable)
+    if (g_Tr143SpeedTestTestUsable)
     {
         getDiagnosticState(DSLH_DIAGNOSTIC_TYPE_Download, PrevDiagState);
 
@@ -4336,7 +4336,7 @@ DownloadDiagnostics_Commit
         getDiagnosticState(DSLH_DIAGNOSTIC_TYPE_Download, CurrDiagState);
         snprintf(buffer, sizeof(buffer), "%d,%s,%s,ccsp_string", CCSP_COMPONENT_ID_NOTIFY_COMP, CurrDiagState, PrevDiagState);
         Notify_change("Device.IP.Diagnostics.DownloadDiagnostics.DiagnosticsState", buffer);
-        CcspTraceError(("%s: TestUsable is not set. Please set the parameter as TRUE to perform WAN Speedtest\n ", __FUNCTION__));
+        CcspTraceError(("%s: TestUsable is false; set Device.IP.Diagnostics.X_RDK_SpeedTest.TestUsable to true\n", __FUNCTION__));
     }
 
     return 0;
@@ -5467,7 +5467,7 @@ UploadDiagnostics_Commit
     if (pAddrName)
         AnscFreeMemory(pAddrName);
 
-    if (gbSpeedTest_TestUsable)
+    if (g_Tr143SpeedTestTestUsable)
     {
         getDiagnosticState(DSLH_DIAGNOSTIC_TYPE_Upload, PrevDiagState);
 
@@ -5518,7 +5518,7 @@ UploadDiagnostics_Commit
         getDiagnosticState(DSLH_DIAGNOSTIC_TYPE_Upload, CurrDiagState);
         snprintf(buffer, sizeof(buffer), "%d,%s,%s,ccsp_string", CCSP_COMPONENT_ID_NOTIFY_COMP, CurrDiagState, PrevDiagState);
         Notify_change("Device.IP.Diagnostics.UploadDiagnostics.DiagnosticsState", buffer);
-        CcspTraceError(("%s: TestUsable is not set. Please set the parameter as TRUE to perform WAN Speedtest\n ", __FUNCTION__));
+        CcspTraceError(("%s: TestUsable is false; set Device.IP.Diagnostics.X_RDK_SpeedTest.TestUsable to true\n", __FUNCTION__));
     }
 
     return 0;
@@ -6915,6 +6915,75 @@ RDK_SpeedTest_SetParamUlongValue
     }
 
     return FALSE;
+}
+
+BOOL
+RDK_SpeedTest_GetParamBoolValue
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       ParamName,
+        BOOL*                       pBool
+    )
+{
+    if (strcmp(ParamName, "TestUsable") == 0)
+    {
+        *pBool = g_Tr143SpeedTestTestUsable;
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+BOOL
+RDK_SpeedTest_SetParamBoolValue
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       ParamName,
+        BOOL                        bValue
+    )
+{
+    if (strcmp(ParamName, "TestUsable") == 0)
+    {
+        g_Tr143SpeedTestTestUsable = bValue;
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+BOOL
+RDK_SpeedTest_Validate
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       pReturnParamName,
+        ULONG*                      puLength
+    )
+{
+    if ((g_Tr143SpeedTestTestUsable == TRUE) || (g_Tr143SpeedTestTestUsable == FALSE))
+    {
+        AnscCopyString(pReturnParamName, "TestUsable");
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+ULONG
+RDK_SpeedTest_Commit
+    (
+        ANSC_HANDLE                 hInsContext
+    )
+{
+    return 0;
+}
+
+ULONG
+RDK_SpeedTest_Rollback
+    (
+        ANSC_HANDLE                 hInsContext
+    )
+{
+    return 0;
 }
 
 

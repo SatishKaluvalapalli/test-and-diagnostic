@@ -978,12 +978,53 @@ SpeedTestServer_SetParamStringValue
 
  APIs for Object:
 
-    IP.Diagnostics.X_RDK_SpeedTest
+    IP.Diagnostics.X_RDK_SpeedTest.
 
+    RDK_SpeedTest_GetParamBoolValue
+    RDK_SpeedTest_SetParamBoolValue
     RDK_SpeedTest_GetParamUlongValue
     RDK_SpeedTest_SetParamUlongValue
+    RDK_SpeedTest_Validate
+    RDK_SpeedTest_Commit
+    RDK_SpeedTest_Rollback
 
 **********************************************************************/
+
+BOOL
+RDK_SpeedTest_GetParamBoolValue
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       ParamName,
+        BOOL*                       pBool
+    );
+
+BOOL
+RDK_SpeedTest_SetParamBoolValue
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       ParamName,
+        BOOL                        bValue
+    );
+
+BOOL
+RDK_SpeedTest_Validate
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       pReturnParamName,
+        ULONG*                      puLength
+    );
+
+ULONG
+RDK_SpeedTest_Commit
+    (
+        ANSC_HANDLE                 hInsContext
+    );
+
+ULONG
+RDK_SpeedTest_Rollback
+    (
+        ANSC_HANDLE                 hInsContext
+    );
 
 BOOL
 RDK_SpeedTest_GetParamUlongValue

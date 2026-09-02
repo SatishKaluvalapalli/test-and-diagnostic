@@ -13,7 +13,7 @@
 
 void getDiagnosticState(uint DiagType, char* DiagState);
 
-extern BOOL gbSpeedTest_TestUsable;
+extern BOOL g_Tr143SpeedTestTestUsable;
 
 typedef enum tr143_diag_e {
     TR143_DIAGNOSTIC_None = 0,
