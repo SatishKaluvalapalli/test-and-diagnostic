@@ -1005,6 +1005,25 @@ RDK_SpeedTest_SetParamUlongValue
 
  APIs for Object:
 
+    X_TELEKOM-COM_Speedtest.
+
+    *  TelSpeedtest_GetParamUlongValue
+***********************************************************************/
+
+
+BOOL
+TelSpeedtest_GetParamUlongValue
+    (
+        ANSC_HANDLE                 hInsContext,
+        char*                       ParamName,
+        ULONG*                      pUlong
+    );
+
+/***********************************************************************
+
+
+ APIs for Object:
+
     IP.Diagnostics.X_RDKCENTRAL-COM_RxTxStats
 
     X_RDKCENTRAL-COM_RxTxStats_GetParamStringValue

@@ -80,6 +80,7 @@
 #include "cosa_powermgt_tcxb6_dml.h"
 #include "cosa_thermal_dml.h"
 #include "cosa_hwst_dml.h"
+#include "cosa_wanspeedtest_dml.h"
 
 /*
 #include "cosa_firewall_dml.h"
@@ -287,6 +288,13 @@ COSA_Init
                                 X_RDKCENTRAL_COM_RxTxStats_Commit);
     pPlugInfo->RegisterFunction(pPlugInfo->hContext, "X_RDKCENTRAL_COM_RxTxStats_Rollback", 
                                 X_RDKCENTRAL_COM_RxTxStats_Rollback);
+
+    pPlugInfo->RegisterFunction(pPlugInfo->hContext, "WANSpeedtest_GetParamBoolValue", WANSpeedtest_GetParamBoolValue);
+    pPlugInfo->RegisterFunction(pPlugInfo->hContext, "WANSpeedtest_SetParamBoolValue", WANSpeedtest_SetParamBoolValue);
+    pPlugInfo->RegisterFunction(pPlugInfo->hContext, "WANSpeedtest_Validate", WANSpeedtest_Validate);
+    pPlugInfo->RegisterFunction(pPlugInfo->hContext, "WANSpeedtest_Commit", WANSpeedtest_Commit);
+    pPlugInfo->RegisterFunction(pPlugInfo->hContext, "WANSpeedtest_Rollback", WANSpeedtest_Rollback);
+    pPlugInfo->RegisterFunction(pPlugInfo->hContext, "TelSpeedtest_GetParamUlongValue", TelSpeedtest_GetParamUlongValue);
 
     pGetCHProc = (COSAGetCommonHandleProc)pPlugInfo->AcquireFunction("COSAGetDiagPluginInfo");
 
