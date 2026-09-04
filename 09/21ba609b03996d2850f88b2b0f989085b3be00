@@ -1,0 +1,66 @@
+source/dmltad/cosa_apis_ip_priv.c
+  s_c7616d4e78c7ba::t_18ac3b63ea2235 1-5,8-92
+  s_c7616d4e78c7ba::t_83a95f17874b9e 6-7,93-94
+source/dmltad/plugin_main.c
+  s_c7616d4e78c7ba::t_0c2f7decf6ea76 227-228,231-233,296-297
+source/dmltad/cosa_apis_ip_priv.h
+  s_c7616d4e78c7ba::t_5ee81aafb3bfb6 1-37
+source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
+  s_c7616d4e78c7ba::t_7a0722594cbca8 83-85,87,96-113,340,359,363-452,454-506,521,534-544,575-578,581-586,593-595,639-657,710,728-778,781-782,838-842,845-865,885-887,889,891-977,979,982-988,990,992-993,1001,1003-1005,1008,1010-1024,1027-1056,1060-1061,1081-1085,1092-1094,1304-1305,1364-1365
+  s_c7616d4e78c7ba::t_2a4ba4f1563671 453
+source/dmltad/cosa_apis_busutil.c
+  s_c7616d4e78c7ba::t_706a51d4cb6b5d 84-86,231,237-277,319-324,354-355,369-389,394-404
+source/diagnostic/BbhmDiagUpload/bbhm_upload_auto_tfl.h
+  s_c7616d4e78c7ba::t_76cb650844dc0d 1-68
+source/diagnostic/include/bbhm_upload_interface.h
+  s_c7616d4e78c7ba::t_775aef280de919 100-101,111,113-114,126
+source/diagnostic/BbhmDiagUpload/bbhm_upload_auto_tfl.c
+  s_c7616d4e78c7ba::t_09fb9707a756d6 1-587
+source/diagnostic/BbhmDiagDownload/bbhm_download_global.h
+  s_c7616d4e78c7ba::t_c1656c2202e163 97,126
+source/diagnostic/include/bbhm_download_interface.h
+  s_c7616d4e78c7ba::t_63c7c440b1380c 99-100,112-113,125
+source/dmltad/cosa_ip_dml.h
+  s_c7616d4e78c7ba::t_83943041cea70d 981,983-984,987-989,993-1028,1047-1065
+source/diagnostic/BbhmDiagCommon/bbhm_common_internal_api.h
+  s_c7616d4e78c7ba::t_e9c9632c35ebcd 1-38
+Makefile.am
+  s_c7616d4e78c7ba::t_392a45285f9494 62,72,85
+  s_c7616d4e78c7ba::t_22b7de35645020 82
+source/diagnostic/bbhm_diag_lib.c
+  s_c7616d4e78c7ba::t_ea2c27d2ede125 88-89,193-195
+source/diagnostic/BbhmDiagDownload/bbhm_download_action.c
+  s_c7616d4e78c7ba::t_890b268d4c3b1f 83-84,95-103,368-377,408-411,414-419,468-486,615-620,640-654,668-669,671-673,675,677-756,758,760-763,765-768,770,772-797,799-808,810-812,814-817,823-824,844-848,855,1067-1068,1137-1138
+source/dmltad/cosa_ip_dml.c
+  s_c7616d4e78c7ba::t_0ceb6a40046b79 5523
+  s_c7616d4e78c7ba::t_8fbb8fb42d7309 4342
+  s_c7616d4e78c7ba::t_d1ff411c548937 4341
+  s_c7616d4e78c7ba::t_77a586681b6463 70,87-91,136-141,3461-3476,3602-3610,3623-3659,4021,4023-4039,4042,4057-4062,4108,4130-4140,4146-4179,4228-4234,4270-4274,4276-4281,4283,4285-4286,4288-4290,4292-4298,4300-4340,4400-4401,4403,4619,4622-4644,4658-4680,4784-4792,4805-4841,5185,5187-5203,5206,5229-5242,5290,5312-5322,5328-5360,5410-5416,5450,5453-5456,5458-5462,5464,5467-5472,5474-5480,5482-5486,5488-5522,5582-5583,5585,6497,6920-6988,7640-7695
+  s_c7616d4e78c7ba::t_0703eab4d86153 5524
+source/dmltad/plugin_main_priv.c
+  s_c7616d4e78c7ba::t_06d633d051cd58 178-179,182-184
+source/diagnostic/BbhmDiagCommon/bbhm_common_internal_api.c
+  s_c7616d4e78c7ba::t_728890913c1f8e 1-160
+config/TestAndDiagnostic_arm.XML
+  s_c7616d4e78c7ba::t_5c3564ee1cf501 378,380,412-423,444,450,487,489,523-535,557-562,565,678-679,682-684,687-693,1580-1600
+source/dmltad/Makefile.am
+  s_c7616d4e78c7ba::t_10a8345ee60827 35-36
+source/diagnostic/BbhmDiagUpload/bbhm_upload_global.h
+  s_c7616d4e78c7ba::t_6c04ec2f467b41 97,126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "0921ba609b03996d2850f88b2b0f989085b3be00",
+  "prompts": {},
+  "sessions": {
+    "s_c7616d4e78c7ba": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "95f43fb1-f4c8-4275-8abe-0242bb0a837a",
+        "model": "composer-2.5"
+      },
+      "human_author": null
+    }
+  }
+}
