@@ -1,0 +1,32 @@
+source/diagnostic/BbhmDiagCommon/bbhm_common_internal_api.c
+  s_1c72b5376e1625::t_36f439377895d7 60
+  s_1c72b5376e1625::t_1865c94ee71679 193
+source/diagnostic/BbhmDiagUpload/bbhm_upload_auto_tfl.h
+  s_1c72b5376e1625::t_9b23aaab1e7b73 59-64,70-71
+  s_1c72b5376e1625::t_d1e8f298256b8a 72
+source/diagnostic/BbhmDiagUpload/bbhm_upload_auto_tfl.c
+  s_1c72b5376e1625::t_5b918be1349bb0 299-300,309,321,323-325
+  s_1c72b5376e1625::t_5d1ab493fd69d5 420,434,442
+  s_1c72b5376e1625::t_6675dc0ef82612 399-405
+  s_1c72b5376e1625::t_9a8ef3e2d96fba 50-51
+  s_1c72b5376e1625::t_2db53ba2772e05 460,471,480,482-484
+source/diagnostic/BbhmDiagUpload/bbhm_upload_action.c
+  s_1c72b5376e1625::t_7bf7fcf5678789 592-601
+  s_1c72b5376e1625::t_8200e6935e51a3 1115,1118-1150
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "e6b89d07d67c8b6691f4536c5a8d8e4ff14b7b62",
+  "prompts": {},
+  "sessions": {
+    "s_1c72b5376e1625": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "08ee74e7-2377-4a64-af26-7d86737bc086",
+        "model": "composer-2.5"
+      },
+      "human_author": "kaluvalapalli.satish <kaluvalapalli.satish@telekom-digital.com>"
+    }
+  }
+}
